@@ -54,69 +54,65 @@
       </div>
     </nav>
 
-     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('img/logo.png')">
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('img/aviso.png')">
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('img/gracias.jpg')">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
-
-    <!-- Page Content -->
-    <div class="container">
-
-      <h1 class="my-4">Galeria</h1>
-      <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <img class="img-responsive" src="img/img1.jpeg" width="300" height="200">
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <img class="img-responsive" src="img/img2.jpeg" width="300" height="200">
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <img class="img-responsive" src="img/img3.jpeg" width="300" height="200">
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <img class="img-responsive" src="img/img4.jpeg" width="300" height="200">
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <img class="img-responsive" src="img/img5.jpeg" width="300" height="200">
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <img class="img-responsive" src="img/img6.jpeg" width="300" height="200">
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-              <img class="img-responsive" src="img/img7.jpeg" width="300" height="200">
-          </div>
-          <div class="col-md-3 col-sm-4 col-xs-6">
-            <img class="img-responsive" src="img/img8.jpeg" width="300" height="200">
-          </div>
-        </div>
-      </div>
+     <!-- Page Content -->
+<div class="container">
+    <h1 class="my-4 text-center">Ventanas Modales </h1>
+    <br>
+    <div class="well">
+        <button class="btn btn-success cursor-pointer" data-toggle="modal" data-target="#carouselModal">Como hacer un Carousel</button>
+        <button class="btn btn-info cursor-pointer pull-right" data-toggle="modal" data-target="#modalModal">Como hacer una Modal</button>
+        <br>
+        <br>
     </div>
-    <!-- /.container -->
+</div>
+
+
+<!-- Modal carousel -->
+<div class="modal fade" id="carouselModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Resumen del Carousel</h5>
+                <button type="button cursor-pointer" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-justify">
+                Para hacer un carousel es necesario ir a la pagina de bootstrap 4, te vas a la opcion de components y eliges la que dice
+                carousel. Una vez dentro elegir el que mas nos guste y copiar el codigo en el html, importante poner la direccion de la imagen
+                para que se muestre en nuestro carousel
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary cursor-pointer" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success cursor-pointer" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal modal -->
+<div class="modal fade" id="modalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Resumen de la ventana Modal</h5>
+                <button type="button cursor-pointer" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-justify">
+                Para hacer una ventana modal es necesario hacer un botón que tiene que tener los atributos data-toggle y data-target
+                que es el identificado que se asocia a nuestra ventana, después se procede a crear la ventana modal, para eso se crea un div
+                que contiene el id que se paso en data-target. Después se procede a construir el cuerpo de la ventan con 3 div, donde uno tendrá
+                la cruz de cerrar, otro el cuerpo de la ventan y por ultimo el pie que contiene los 2 botones para cerrar también la ventana modal.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary cursor-pointer" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success cursor-pointer" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
     
 <!-- Footer -->
     <footer class="py-5 bg-dark">
